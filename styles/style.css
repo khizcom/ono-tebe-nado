@@ -67,6 +67,7 @@ address {
 
 .cover {
 	display: flex;
+	position:relative;
 	flex-direction: column;
 	background-image: url(../images/cover.jpg);
 	background-position: center;
@@ -75,9 +76,20 @@ address {
 	height: 757px;
 	gap: 135px;
 }
+.overlay {
+	position: absolute;
+	top: 0;
+	background-color: #000;
+	opacity: 0.6;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+	
+}
 
 .cover__title {
 	padding: 165px 50px 0px 50px;
+	z-index: 6;
 }
 
 .aligned-text{
@@ -121,12 +133,14 @@ address {
 
 .cover__description {
 	margin-right: 50px;
+	margin-bottom: 50px;
   display: flex;
   justify-content: end;
   font-size: 22px;
   text-transform: uppercase;
   gap: 78px;
   align-items: center;
+	z-index: 6;
 }
 
 .cover__description-text {
