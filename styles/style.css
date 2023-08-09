@@ -70,19 +70,17 @@ address {
 	flex-direction: column;
 	background-image: url(../images/cover.jpg);
 	background-position: center;
-  	background-size: cover;
-  	background-repeat: no-repeat;
-  	height: 757px;
-
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 757px;
+	gap: 135px;
 }
 
 .cover__title {
-	gap: 20px;
 	padding: 165px 50px 0px 50px;
 }
 
 .aligned-text{
-	margin: 20px;
 	display: block;
 	color: #FFF;
 	font-family: Raleway;
@@ -111,13 +109,18 @@ address {
 
 .aligned-text_center {
 	text-align: center;
-	margin: 20px auto;
 }
+
+.align-text-center-margin {
+	margin: 20px 0px;
+}
+
 .aligned-text_right {
 	text-align: right;
 }
 
 .cover__description {
+	margin-right: 50px;
   display: flex;
   justify-content: end;
   font-size: 22px;
@@ -127,5 +130,29 @@ address {
 }
 
 .cover__description-text {
-	display: inline;
+	color: #FFF;
+	text-align: center;
+	font-family: Raleway;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px; /* 127.273% */
+	text-transform: uppercase;
+	word-spacing: 18px;
+}
+
+.bet-button {
+	padding: 12px 32px;
+	background-color: transparent;
+	border: 1px solid #FFF;
+	text-align: center;
+	color: #FFF;
+	text-align: center;
+	font-family: Raleway;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+	cursor: pointer;
 }
