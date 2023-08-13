@@ -1,19 +1,21 @@
 body {
-	background-color: white;
+	
 }
 .header {
+	min-width: 1340px;
+	min-height: 109px;
 	margin: 0 auto;
 	flex-shrink: 0;
 	display: grid;
-	grid-template-columns: 2fr 1fr 2fr;
-	padding: 92px 49px 92px 51px;
-	justify-items: center;
+	grid-template-columns: 1fr auto 1fr;
+	/* padding: 92px 32px 92px 51px; */
+	margin: 92px 49px 92px 51px;
 	align-items: center;
 }
 
 .header_menu_list {
 	display: flex;
-	gap: 25px;
+	gap: 32px;
 	list-style: circle;
 }
 
@@ -35,8 +37,10 @@ ul li:first-child {
 }
 
 .header_logo-image{
+	
 	width: 148px;
 	height: 105px;
+	justify-self: center;
 }
 
 .address-item {
@@ -50,8 +54,7 @@ ul li:first-child {
 }
 
 address { 
-	all: initial;
-  	padding-bottom: 7px; 
+	justify-self: end;
 }
 
 .address_row {
@@ -66,6 +69,8 @@ address {
 }
 
 .cover {
+	min-height: 757px;
+	margin: 0;
 	display: flex;
 	position:relative;
 	flex-direction: column;
@@ -73,8 +78,7 @@ address {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 757px;
-	gap: 135px;
+	gap: 126px;
 }
 .overlay {
 	position: absolute;
@@ -89,7 +93,7 @@ address {
 }
 
 .cover__title {
-	padding: 165px 50px 0px 50px;
+	margin: 165px 30px 0px 50px;
 	z-index: 6;
 }
 
@@ -122,10 +126,11 @@ address {
 
 .aligned-text_center {
 	text-align: center;
+	padding-left: 
 }
 
 .align-text-center-margin {
-	margin: 20px 0px;
+	margin: 13px 0px 5px;
 }
 
 .aligned-text_right {
@@ -133,15 +138,14 @@ address {
 }
 
 .cover__description {
-	margin-right: 50px;
-	margin-bottom: 50px;
+	margin-right: 30px;
 	 display: flex;
 	 justify-content: end;
 	 font-size: 22px;
 	 text-transform: uppercase;
 	 gap: 78px;
 	 align-items: center;
-	z-index: 6;
+	 z-index: 6;
 }
 
 .cover__description-text {
@@ -157,6 +161,7 @@ address {
 }
 
 .bet-button {
+	padding-right: 50px;
 	padding: 12px 32px;
 	background-color: transparent;
 	border: 1px solid #FFF;
@@ -237,6 +242,7 @@ address {
 }
 
 .card__title {
+	margin-top: 24px;
 	color: #FFF;
 	font-family: Raleway;
 	font-size: 22px;
@@ -259,10 +265,9 @@ address {
 }
 
 .lots__look-more-link {
-	margin-left: 90px;
+	margin-left: 40px;
 	top: 30px;
 	position: relative;
-	
 	text-decoration: none;
 	color: #000;
 	font-family: Raleway;
@@ -276,7 +281,7 @@ address {
 	display: grid;
 	grid-template-columns:430px auto;
 	column-gap: 25px;
-	margin: 183px 50px 0 50px ;
+	margin: 212px 50px 0 50px ;
 	min-height: 487px;
 	min-width: 1340px;	 	
 }
@@ -329,7 +334,7 @@ address {
 }
 
 .footer {
-	margin: 180px 50px 90px;
+	margin: 178px 50px 90px;
 	display: flex;
 	justify-content: space-between;
 	min-width: 1340px;
